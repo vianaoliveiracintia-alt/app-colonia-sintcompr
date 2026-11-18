@@ -7,8 +7,8 @@
 <meta name="description" content="Reservas da Colônia de Férias do SINTCOM-PR">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0b5d7a">
-<link rel="icon" type="image/png" href="icons/favicon-32.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Colônia SINTCOM">
@@ -37,13 +37,13 @@
   #instalar .bt { padding: 10px 14px; font-size: 14px; }
   #instalar .x { background: none; border: 0; font-size: 22px; color: #5f6f7e; cursor: pointer; padding: 0 4px; align-self: flex-start; }
 </style>
-<script src="config.js"></script>
+<script>/* sempre o config.js mais recente (evita a cópia antiga guardada pelo navegador) */ document.write('<script src="config.js?v=' + Date.now() + '"><\/script>');</script>
 </head>
 <body>
   <iframe id="sistema" title="Colônia de Férias – SINTCOM-PR" allow="camera; clipboard-write; fullscreen"></iframe>
 
   <div id="abertura" class="tela">
-    <img src="icons/icon-192.png" alt="">
+    <img src="icon-192.png" alt="">
     <h1>Colônia de Férias</h1>
     <p>SINTCOM-PR</p>
     <div class="giro" id="giro"></div>
@@ -55,7 +55,7 @@
   </div>
 
   <div id="instalar" class="oculto">
-    <img src="icons/icon-192.png" alt="">
+    <img src="icon-192.png" alt="">
     <div class="tx"><b>Instale o app da Colônia</b><span id="instTexto">Acesse as reservas direto da tela inicial do celular.</span></div>
     <button class="bt oculto" id="instBotao">Instalar</button>
     <button class="x" onclick="fecharInstalar()" aria-label="Fechar">×</button>
