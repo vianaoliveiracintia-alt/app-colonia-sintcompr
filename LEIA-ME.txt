@@ -1,0 +1,41 @@
+APP DA COLÔNIA DE FÉRIAS – SINTCOM-PR
+=====================================
+
+Esta pasta é o "app" que se instala no celular. Ele abre o sistema da Colônia (Apps Script)
+em tela cheia, com ícone e nome próprios. O sistema e a planilha continuam os mesmos.
+
+Arquivos:
+  index.html            página do app (não precisa mexer)
+  config.js             ÚNICO arquivo que você precisa editar: o link do sistema
+  manifest.webmanifest  nome, cores e ícones do app
+  sw.js                 permite instalar e mostra aviso quando estiver sem internet
+  icons/                ícones (pode trocar pelo logotipo do SINTCOM-PR, mantendo os mesmos nomes e tamanhos)
+
+
+1) COLOCAR O LINK DO SISTEMA
+   - No Apps Script: Implantar → Gerenciar implantações → copie o "URL do app da Web" (termina em /exec).
+   - Abra o config.js e cole o link no lugar de COLE_AQUI_O_LINK_DO_SISTEMA (mantenha as aspas).
+   - Se um dia o link do sistema mudar, basta trocar aqui de novo.
+
+2) PUBLICAR DE GRAÇA NO GITHUB PAGES
+   a. Crie uma conta em https://github.com (pode ser com o e-mail do sindicato).
+   b. Clique em "New" (novo repositório). Nome: colonia-sintcom · marque "Public" · "Create repository".
+   c. Clique em "uploading an existing file" e arraste TODOS os arquivos e a pasta icons
+      (o conteúdo desta pasta, não a pasta em si). Clique em "Commit changes".
+   d. Vá em Settings → Pages. Em "Source" escolha "Deploy from a branch",
+      Branch: "main" e pasta "/ (root)". Clique em "Save".
+   e. Em 1 ou 2 minutos aparece o endereço do app, por exemplo:
+      https://SEU-USUARIO.github.io/colonia-sintcom/
+   Para corrigir o link depois: abra o config.js no GitHub → lápis (Edit) → cole → "Commit changes".
+
+3) TESTAR ANTES DE DIVULGAR
+   - Abra o endereço no Android (Chrome) e no iPhone (Safari), entre com um usuário e faça
+     uma reserva de teste. Instale pelo convite que aparece embaixo.
+   - Se no iPhone o login não funcionar dentro do app, o botão "Abrir no navegador" da tela
+     de abertura leva ao sistema normalmente (e me avise para ajustarmos).
+
+4) COMO OS FILIADOS INSTALAM
+   Android: abrir o endereço no Chrome → tocar em "Instalar" (no aviso de baixo)
+            ou menu ⋮ → "Instalar app" / "Adicionar à tela inicial".
+   iPhone:  abrir o endereço no Safari → Compartilhar (quadrado com seta ↑)
+            → "Adicionar à Tela de Início" → "Adicionar".
