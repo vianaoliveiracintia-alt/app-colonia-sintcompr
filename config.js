@@ -5,4 +5,4 @@
  * Onde achar: no Apps Script, Implantar → Gerenciar implantações → copie o "URL do app da Web".
  * Exemplo: 'https://script.google.com/macros/s/AKfycbx...../exec'
  */
-const URL_SISTEMA = 'COLE_AQUI_O_LINK_DO_SISTEMA';
+const URL_SISTEMA = 'https://script.google.com/macros/s/AKfycbwCeE8jPLNhQvwNEPYnSGaRJxkq6YMP31qzAcLkvgK5OWiM63NXdrMZiViVHiWRfOdi/exec';
